@@ -74,11 +74,15 @@ const controlPagination = function (state = 'next') {
   paginationView.render(model.state.search);
 };
 
+const newFeature = function () {
+  console.log('Welcome to the application');
+};
+
 const init = function () {
   recipeView.addHandlerRender(controlRecipe);
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
-  console.log('Welcome');
+  newFeature();
 };
 
 init();
